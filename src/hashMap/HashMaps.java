@@ -8,9 +8,6 @@
 //
 //        HashMap<String,String>hashMap=new HashMap<>();
 //        hashMap.put("Sarthak","Mittal");
-//        hashMap.put("Dishi","Mittal");
-//        hashMap.put("Nain","Mittal");
-//        hashMap.put("Pradeep","MIttal");
 //        System.out.println(hashMap);
 //     //entrySet() impl
 //        for(Map.Entry<String,String>entry:hashMap.entrySet()){
