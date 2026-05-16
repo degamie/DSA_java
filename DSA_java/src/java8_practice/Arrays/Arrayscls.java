@@ -1,4 +1,4 @@
-//WID(8/5/2026)(Sarthal Mittal)#1.1.1
+//WID(16/5/2026)(Sarthal Mittal)#1.1.1.1
 package java8_practice.Arrays;
 
 import java.util.Arrays;
@@ -18,6 +18,9 @@ public class Arrayscls {//Arrays class Declare
                 Arrays.asList("Deployment","Oracle WebLogic 12C"),
                 Arrays.asList("GameDev","Unreal Engine","Unity","LiB(GD)X","GDdevelop")
         );
+        skills.getFirst();
+        System.out.println(skills);
+
         //Mapping multiple SkillSet's Elements into 1 combined List's Stream and Collecting its Elements in an immutablelist
         List<String> skillset=skills.stream().flatMap(skillsList->skillsList.stream()).collect(Collectors.toUnmodifiableList());
         System.out.println(skillset);//pritning SkillSet
