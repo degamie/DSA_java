@@ -1,4 +1,4 @@
-//WID(16/5/2026)(Sarthal Mittal)#1.1.1.1
+//WID(24/5/2026)(Sarthal Mittal)#1.1.1.1.1
 package java8_practice.Arrays;
 
 import java.util.Arrays;
@@ -18,6 +18,8 @@ public class Arrayscls {//Arrays class Declare
                 Arrays.asList("Deployment","Oracle WebLogic 12C"),
                 Arrays.asList("GameDev","Unreal Engine","Unity","LiB(GD)X","GDdevelop")
         );
+        System.out.println(skills.get(0));
+//        System.out.println(skills.get(1));
         skills.getFirst();
         System.out.println(skills);
 
