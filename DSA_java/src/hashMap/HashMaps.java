@@ -1,4 +1,4 @@
-//WID(Sarthak Mittal(DegameiSign)(#1)(26/5/2026)
+//WID(Sarthak Mittal(DegameiSign)(#1)(24/5/2026)(HashMap)
 package hashMap;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +14,8 @@ public class HashMaps {
         h1.put("Sign",2);
         h1.put("Game ",4);
         h1.put("Developer",5);
+        h1.values();
+        System.out.println(h1);
 
         h1.get(1);
         h1.get(2);
