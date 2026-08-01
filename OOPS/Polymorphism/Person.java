@@ -1,7 +1,8 @@
-//WID(23/05/2026)(Sarthak Mittal)(DegamieSign)#1
+//WID(01/08/2026)(Sarthak Mittal)(DegamieSign)#1(Impl)
 package OOPS.Polymorphism;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -19,15 +20,17 @@ class Streams extends  Person{
         arrlist.add("GameDev");
         arrlist.add("Java FSD");
         arrlist.add("2026");
+        HashSet<String> hashset=new HashSet<>();
         Stream stream= arrlist.stream()
                 .filter(a -> a.startsWith("S"))
                 .distinct()
                 .sorted()
-                .parallel()
-               ;
+                .peek(s->hashset.add(s))
+                .parallel();
+        System.out.println(stream);
 
 //                .flatMap("Sarthak".contains(p.getName())
-        System.out.println(arrlist);
+//        System.out.println(arrlist);
 //        arrlist.getFirst();
 
 
