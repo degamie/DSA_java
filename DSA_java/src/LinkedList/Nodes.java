@@ -1,7 +1,10 @@
-//WID(14/5/2026)(Sarthak Mittal)(DegamieSign)#1
+//WID(02/09/2026)(Sarthak Mittal)(DegamieSign)#1.1
 package LinkedList;
 
 //import org.w3c.dom.Node;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class Nodes {
     public  int data;
@@ -49,15 +52,21 @@ public LinkedLists(int data) {
 
 
 class Main extends LinkedLists{
-
-
     public static void main(String[] args){
-            LinkedLists n=new LinkedLists();
-            n.addNodes(1);
-        n.addNodes(2);
-        n.addNodes(3);
-        n.addNodes(4);
-        n.printLL();
+//        int x=0;
+        List<Integer> l1=new LinkedList();
+        l1.add(1);l1.add(2);l1.add(3);l1.add(4);
+        l1.removeIf(x->x%2==0);
+        l1.add(5);
+        l1.addLast(6);
+        l1.addFirst(7);
+        System.out.println(l1);
+//            LinkedLists n=new LinkedLists();
+//            n.addNodes(1);
+//        n.addNodes(2);
+//        n.addNodes(3);
+//        n.addNodes(4);
+//        n.printLL();
         }
     }
 
