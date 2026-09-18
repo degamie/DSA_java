@@ -17,7 +17,7 @@ public class Nodes {
         this.size=0;
     }
 }
- class LinkedLists extends  Nodes{
+ class  LinkedLists extends  Nodes{
 //  public   Nodes next=new Nodes();
 public LinkedLists(int data) {
         this.data= head.data;;
@@ -61,15 +61,20 @@ class Main extends LinkedLists{
         l1.addLast(6);
         l1.addFirst(7);
         System.out.println(l1);
+        for(int i=0;i<l1.size();i++){
+            System.out.println("Element at Index:"+i+l1.get(i));
+        }
+    }
+}
+
+
+
 //            LinkedLists n=new LinkedLists();
 //            n.addNodes(1);
 //        n.addNodes(2);
 //        n.addNodes(3);
 //        n.addNodes(4);
 //        n.printLL();
-        }
-    }
-
 
 //    E item;
 //    Node<E> prev;    Node<E> next;
